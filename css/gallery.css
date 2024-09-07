@@ -1,0 +1,33 @@
+.gallery {
+    max-width: 1336px; 
+    height: 812px;
+    margin: 0 auto; 
+    padding: 10px; 
+    text-align: center; 
+    border:2px solid #F0F0F1;
+    border-radius: 16px;
+    .description {
+        font-size: 21px; 
+        margin-bottom: 20px; 
+        font-weight: 500px;
+        color: black;
+        
+    }
+
+    .container {
+        display: grid; /* استفاده از گرید برای چیدمان */
+        grid-template-columns: repeat(6, 1fr); /* 6 ستون */
+        gap: 10px; 
+        height: 812px;
+        .image {
+            display: block; 
+            img {
+                width: 150px; 
+                height: 150px; 
+                border-radius: 8px;
+                object-fit: cover; 
+            }
+        }
+        
+    }
+}

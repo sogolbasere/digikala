@@ -1,0 +1,209 @@
+header {
+    width: 100%;
+    .menu1 {
+      width: 100%;
+      height: 68px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      .logo {
+        height: 100%;
+        display: flex;
+        align-items: center;
+      }
+      .search {
+        width: 600px;
+        height: 44px;
+        padding: 0 16px;
+        form {
+          width: 100%;
+          height: 100%;
+          label {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: relative;
+            svg {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              right: 10px;
+            }
+            input {
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-color: #f0f0f1;
+              outline: none;
+              border: none;
+              border-radius: 8px;
+              padding-right: 40px;
+            }
+          }
+        }
+      }
+      .buttons {
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        a {
+          display: flex;
+          align-items: center;
+          color: rgb(12, 12, 12);
+          font-size: 12px;
+          font-weight: 700;
+          &:first-child {
+            height: 40px;
+            gap: 10px;
+            border: 1px solid rgb(224, 224, 226);
+            border-radius: 8px;
+            padding: 0 16px;
+          }
+          &:last-child {
+            width: 40px;
+            height: 40px;
+            padding: 8px;
+          }
+        }
+      }
+    }
+    .menu2 {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      .menu {
+        .menu-list {
+          display: flex;
+          gap: 24px;
+          height: 100%;
+          .menu-item {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            &:first-child {
+              .menu-link {
+                font-size: 14px;
+                color: rgb(12, 12, 12);
+              }
+            }
+            .menu-link {
+              font-size: 12px;
+              color: #62666d;
+              display: flex;
+              align-items: center;
+              gap: 4px;
+              font-weight: bold;
+            }
+            .submenu {
+              display: none; /* به طور پیش‌فرض مخفی است */
+              list-style-type: none;
+              padding-left: 20px;
+              margin-top: 10px;
+              background-color: aqua;
+
+              li {
+                
+              
+                padding: 10px;
+                
+                  margin-bottom: 5px;
+                  ul {
+                    list-style-type: none;
+                    padding-left: 20px;
+                    margin: 30px 0 0 0;
+    
+                    li {
+                        margin-bottom: 5px;
+                    }
+                }
+              }
+            }
+            &:hover .submenu {
+              display: block; 
+            }
+          }
+        }
+      }
+      .city {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        gap: 8px;
+        cursor: pointer;
+      }
+    }
+  }
+  #open-city,
+  #close-city {
+    display: none;
+  }
+  #open-city:checked ~ .city-modal {
+    display: block;
+    animation: fadeIn 300ms linear forwards;
+  }
+  #close-city:checked ~ .city-modal {
+    display: none;
+  }
+  .city-modal {
+    width: 22%;
+    height: 80dvh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 999;
+    border-radius: 16px;
+    box-shadow: 4px 6px 16px rgba(0, 0, 0, 0.16);
+    .top {
+      width: 100%;
+      height: 58px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      &::after {
+        position: absolute;
+        bottom: 0;
+        content: "";
+        width: calc(100% - 40px);
+        height: 1px;
+        background-color: #d1d1d1;
+      }
+      .title {
+        font-size: 16px;
+      }
+      label {
+        height: 24px;
+        width: 24px;
+        cursor: pointer;
+      }
+    }
+    .body {
+      width: 100%;
+      height: calc(100% - 58px);
+      overflow-y: scroll;
+      .list {
+        width: 100%;
+        padding: 16px 20px;
+        .item {
+          width: 100%;
+          height: 56px;
+          padding: 12px 0;
+          border-bottom: 1px solid #d1d1d1;
+          .link {
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 15px;
+            color: rgb(12, 12, 12);
+          }
+        }
+      }
+    }
+  }

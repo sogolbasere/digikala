@@ -1,0 +1,26 @@
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px; /* فاصله بین تصاویر */
+    width: 1336px;
+    height: 812px;
+}
+
+.product-item {
+    background-color: #eaeaea;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-item img {
+    width: 150px;
+    height:150px; /* حفظ نسبت تصویر */
+    display: block;
+}

@@ -1,0 +1,27 @@
+.services {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .service {
+      display: flex;
+      justify-content: center;
+      flex-flow: column nowrap;
+      align-items: center;
+      .img {
+        width: 52px;
+        height: 52px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .title {
+        font-size: 11px;
+        color: #3f4064;
+        margin-top: 4px;
+        padding: 0 16px;
+      }
+    }
+  }

@@ -1,0 +1,33 @@
+.gallery2 {
+    max-width: 1336px; 
+    height: 812px;
+    margin: 0 auto; 
+    padding: 20px; 
+    text-align: center; 
+    border:2px solid red;
+    border-radius: 16px;
+    .description {
+        font-size: 24px; 
+        margin-bottom: 20px; 
+        
+    }
+
+    .container {
+        display: grid; 
+        grid-template-columns: repeat(6, 1fr); 
+        gap: 10px; 
+
+        height: 812px;
+
+        .image {
+            display: block; 
+            img {
+                width: 150px; 
+                height: 150px; 
+                border-radius: 8px; 
+                object-fit: cover; 
+            }
+        }
+
+    }
+}

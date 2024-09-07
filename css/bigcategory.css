@@ -1,0 +1,44 @@
+/*.bcategory{
+    width: 100%;
+    height: 240px;
+    margin-top: 24px;
+    margin-right: 90px;
+    margin-left: 80px;
+
+
+ 
+    .img{
+        display: inline-block;
+        gap: 500px;
+        overflow-clip-margin: content-box;
+        
+        
+        img{
+            width: 322px;
+            height: 240px;
+            border-radius:16px;
+            object-fit: cover;
+            overflow: hidden;
+            position: relative;
+            
+        }
+    }
+
+}*/
+.bcategory {
+  display: flex; 
+  justify-content: space-between; 
+  max-width: 1400px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  .img {
+    display: flex; 
+    width: 100%; 
+    img {
+      width: 322px; 
+      margin-right: 20px; 
+      height: auto; 
+      border-radius: 16px; 
+    }
+  }
+}

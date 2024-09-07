@@ -1,0 +1,62 @@
+/*.minipaqnel{
+    width: 100%;
+    height: 295px;
+    margin-top: 24px;
+   
+    border-radius: 16px;
+    padding: 20px 0;
+    .container-mini{
+        background-image: url(../images/freshPattern.svg)  no-repeat center / cover ;
+        
+        width: 100%;
+        .img{
+            display: inline-block;
+            margin-right: 24px;
+            background-color: blue;
+            img{
+                
+            }
+        }
+    }
+}*/
+.minipanel {
+    width: 1336px; /* عرض ثابت برای بک‌گراند */
+    height: 110px;
+    background-color: #ECEFEE;
+    background-image: url(../images/freshPattern.svg); /* مسیر تصویر بک‌گراند */
+    background-repeat: no-repeat; /* جلوگیری از تکرار بک‌گراند */
+    background-position: center; /* مرکز کردن بک‌گراند */
+    margin: 0 auto; /* مرکز کردن کانتینر */
+    border-radius: 16px;
+    margin-top: 30px;
+}
+
+.container-mini {
+    display: flex; /* استفاده از فلیکسیبل باکس برای چیدمان */
+    justify-content: space-between; /* فاصله بین عکس‌ها */
+    max-width: 100%; /* عرض کانتینر به 100% */
+    height: 110px;
+    padding-top: 30px;
+}
+
+.img1 {
+    flex: 1; /* هر عکس عرض یکسانی را می‌گیرد */
+    margin:  10px; /* فاصله بین عکس‌ها */
+}
+
+.img1 img {
+    width: 66px; /* عرض عکس‌ها */
+    height: 62px; /* ارتفاع عکس‌ها */
+    border-radius: 8px; /* گوشه‌های گرد */
+}
+.img2 {
+    flex: 1; /* هر عکس عرض یکسانی را می‌گیرد */
+    margin: 20px 10px; /* فاصله بین عکس‌ها */
+}
+.img2 img {
+    width:250px; /* عرض عکس‌ها */
+    height: 28px; /* ارتفاع عکس‌ها */
+    
+}
+
+
